@@ -8,37 +8,37 @@ function getMesTexto (numeroMes) {
             mes = 'Fevereiro';
             return mes;
         case 2: 
-            diaSemanaTexto = 'Março';
+            mes = 'Março';
             return mes;
         case 3: 
-            diaSemanaTexto = 'Abril';
+            mes = 'Abril';
             return mes;
         case 4: 
-            diaSemanaTexto = 'Maio';
+            mes = 'Maio';
             return mes;
         case 5: 
-            diaSemanaTexto = 'Junho';
+            mes = 'Junho';
             return mes; 
         case 6: 
-            diaSemanaTexto = 'Julho';
+            mes = 'Julho';
             return mes;  
         case 7: 
-            diaSemanaTexto = 'Agosto';
+            mes = 'Agosto';
             return mes;  
         case 8: 
-            diaSemanaTexto = 'Setembro';
+            mes = 'Setembro';
             return mes;  
         case 9: 
-            diaSemanaTexto = 'Outubro';
+            mes = 'Outubro';
             return mes;  
         case 10: 
-            diaSemanaTexto = 'Novembro';
+            mes = 'Novembro';
             return mes;  
         case 11: 
-            diaSemanaTexto = 'Dezembro';
+            mes = 'Dezembro';
             return mes;  
         default:
-            diaSemanaTexto = '';
+            mes = '';
             return diaSemanaTexto;
         }
 }
@@ -51,19 +51,19 @@ function getDiaSemanaTexto (diaSemana) {
             diaSemanaTexto = 'Domingo';
             return diaSemanaTexto;
         case 1: 
-            diaSemanaTexto = 'Segunda';
+            diaSemanaTexto = 'Segunda-feira';
             return diaSemanaTexto;
         case 2: 
-            diaSemanaTexto = 'Terça';
+            diaSemanaTexto = 'Terça-feira';
             return diaSemanaTexto;
         case 3: 
-            diaSemanaTexto = 'Quarta';
+            diaSemanaTexto = 'Quarta-feira';
             return diaSemanaTexto;
         case 4: 
-            diaSemanaTexto = 'Quinta';
+            diaSemanaTexto = 'Quinta-feira';
             return diaSemanaTexto;
         case 5: 
-            diaSemanaTexto = 'Sexta';
+            diaSemanaTexto = 'Sexta-feira';
             return diaSemanaTexto;
         case 6: 
             diaSemanaTexto = 'Sábado';
@@ -77,13 +77,15 @@ function getDiaSemanaTexto (diaSemana) {
 function criaData(data) {
     const diaSemana = data.getDay();
     const numeroMes = data.getMonth();
-    const nomeDia = getDiaSemanaTexto();
-    const nomeMes = getMesTexto();
+    const nomeDia = getDiaSemanaTexto(diaSemana);
+    const nomeMes = getMesTexto(numeroMes);
     const ano = data.getFullYear();
-    const horas = data.getHours();
+    const hora = data.getHours();
+    const min = data.getMinutes();
+    const sec = data.getSeconds();
     
     const res = document.getElementById('res');
-    res.innerHTML = `${nomeDia}, ${diaSemana} de ${nomeMes} de ${ano} </br> ${horas}`;
+    res.innerHTML = `${nomeDia}, ${diaSemana} de ${nomeMes} de ${ano}. </br> ${hora}:${min}:${sec}`;
 }
 
 const data = new Date();
