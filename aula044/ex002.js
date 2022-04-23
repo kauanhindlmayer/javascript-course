@@ -1,0 +1,11 @@
+/*
+Escreva uma função chamada ePaisagem que
+recebe dois argumentos. Largura e Altura
+de uma imagem (number). Retorne true se a
+imagem estiver no modo paisagem.
+*/
+
+const ePaisagem = (largura, altura) => 
+  largura >= altura;
+
+console.log(ePaisagem(1080, 1920));
