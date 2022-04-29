@@ -60,3 +60,7 @@ form button:hover {
 div#relogio {
   font-size: 3em;
 }
+
+.pausado {
+  color: red;
+}
