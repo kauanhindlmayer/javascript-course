@@ -4,20 +4,21 @@ const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
 
 function mostraHora() {
-  let data = new Date();
+  let data = new Date("December 17, 1995 00:00:00");
 
-  return data.toLocaleTimeString('pt-BR', {
-    hour12: false
-  });
+  const hora = data.getHours();
+  const min = data.getMinutes();
+  const sec = data.getSeconds();
+
+  relogio.innerHTML = `${hora}:${min}:${sec}`;
 }
 
-setInterval(function () {
-  console.log(mostraHora());
-}, 1000);
 
 
 iniciar.addEventListener('click', function(event) {
-  alert('Cliquei no iniciar');
+  setInterval(function () {
+    mostraHora() + 1000;
+  }, 1000);
 });
 
 pausar.addEventListener('click', function(event) {
