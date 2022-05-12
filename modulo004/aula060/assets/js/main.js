@@ -19,7 +19,7 @@ function Calculadora() {
     let conta = this.display.value;
 
     try {
-      conta = eval(conta);
+      conta = eval(conta); 
 
       if(!conta) {
         alert('Conta inválida!');
