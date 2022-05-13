@@ -17,9 +17,17 @@ const pessoas = [
 
 // Para cada elemento:
 // Retorne apenas uma string com o nome da pessoa
-const nomes = pessoas.map(valor => valor.nome.toString());
+const nomes = pessoas.map(obj => obj.nome);
 console.log(nomes);
 
-
 // Remova apenas a chave "nome" do objeto
+const idades = pessoas.map(obj => ({ idade: obj.idade }));
+console.log(idades);
+
 // Adicione uma chave id em cada objeto
+const comIds = pessoas.map(function(obj, indice){
+const novoObjeto = { ...obj}; // spread operator
+novoObjeto.id = (indice + 1) * 1000;
+return novoObjeto;
+});
+console.log(comIds);
