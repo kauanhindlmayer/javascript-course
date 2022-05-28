@@ -13,12 +13,10 @@
 */
 
 const produto = {nome: 'Produto', preco: 1.8};
-const caneca = { 
-  ...produto,
-  material: 'porcelana'
-};
-
-caneca.nome = 'Outro nome';
-caneca.preco = 2.5;
-console.log(produto); // { nome: 'Produto', preco: 1.8 }
-console.log(caneca); // { nome: 'Outro nome', preco: 2.5, material: 'porcelana' }
+Object.defineProperty(produto, 'nome', {
+  writable: false,
+  configurable: false,
+  value: 'Qualquer outra coisa'
+});
+console.log(Object.getOwnPropertyDescriptor(produto, 'nome'));
+console.log(produto);
