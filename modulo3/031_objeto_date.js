@@ -2,6 +2,7 @@
 // const tresHoras = 60 * 60 * 3 * 1000;
 // const umDia = 60 * 60 * 24 * 1000;
 // const data = new Date(0 + tresHoras + umDia);
+
 /*
 const data = new Date('2019-04-20 20:20:59');
 console.log('Dia', data.getDate());

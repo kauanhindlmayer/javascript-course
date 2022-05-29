@@ -1,13 +1,13 @@
 /*
-&& -> false && true -> false "o valor mesmo"
-|| -> true && false -> vai retornar "o valor verdadeiro"
+  && -> false && true -> false "o valor mesmo"
+  || -> true && false -> vai retornar "o valor verdadeiro"
 
-FALSY
-*false
-0
-'' "" ``
-null / undefined
-NaN
+  FALSY
+  *false
+  0
+  '' "" ``
+  null / undefined
+  NaN
 */
 
 console.log('Luiz Otávio' && 0 && 'Maria'); // 0
