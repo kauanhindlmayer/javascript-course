@@ -1,9 +1,9 @@
-fetch('pessoas.json')
-  .then(resposta => resposta.json())
-  .then(json => carregaElementosNaPagina(json));
+// fetch('pessoas.json')
+//   .then(resposta => resposta.json())
+//   .then(json => carregaElementosNaPagina(json));
 
-// axios('pessoas.json')
-//   .then(resposta => carregaElementosNaPagina(resposta.data));
+axios('pessoas.json')
+  .then(resposta => carregaElementosNaPagina(resposta.data));
 
 function carregaElementosNaPagina(json) {
   const table = document.createElement('table');
