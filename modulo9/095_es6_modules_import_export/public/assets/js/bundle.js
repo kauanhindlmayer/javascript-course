@@ -1,0 +1,2 @@
+(()=>{"use strict";function e(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function n(n,t,r){return t&&e(n.prototype,t),r&&e(n,r),Object.defineProperty(n,"prototype",{writable:!1}),n}var t=new(n((function e(n,t){!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),this.nome=n,this.sobrenome=t})))("Kauan","Hindlmayer");console.log(t)})();
+//# sourceMappingURL=bundle.js.map
