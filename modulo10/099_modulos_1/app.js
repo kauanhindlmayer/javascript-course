@@ -1,17 +1,24 @@
-const nome = 'Kauan';
-const sobrenome = 'Hindlmayer';
+// const mod1 = require('./mod1');
+// console.log(mod1.falaNome());
 
-const falaNome = () => {
-  console.log(nome, sobrenome);
-};
+// const falaNome = require('./mod1').falaNome;
 
-// module.exports.nome = nome;
-// module.exports.sobrenome = sobrenome;
-// module.exports.falaNome = falaNome;
+const { nome, sobrenome, falaNome } = require('./mod1');
+console.log(nome, sobrenome);
+console.log(falaNome);
 
-exports.nome = nome;
-exports.sobrenome = sobrenome;
-exports.falaNome = falaNome;
+const path = require('path');
+const axios = require('axios');
+const mod1 = require('./mod1')
 
-console.log(module.exports);
+const { Pessoa } = require('./mod1');
+const p1 = new Pessoa('Kauan');
+console.log(p1);
 
+// axios('https://www.otaviomiranda.com.br/files/json/pessoas.json')
+//   .then(response => console.log(response.data))
+//   .catch(e => console.log(e));
+
+const p2 = new Pessoa('João');
+console.log(mod1);
+console.log(Pessoa);
