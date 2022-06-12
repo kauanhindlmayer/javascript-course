@@ -1,3 +1,10 @@
-const multiplicacao = require('./mod');
+const Cachorro = require('./Z/mod2');
 
-console.log(multiplicacao(2, 2));
+const lara = new Cachorro('Lara');
+lara.latir();
+
+console.log(__filename);
+console.log(__dirname); 
+
+const path = require('path');
+console.log(path.resolve(__dirname, '..', '..'));
