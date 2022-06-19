@@ -1,4 +1,4 @@
-# JavaScript Course @luizomf
+## JavaScript Course @luizomf
 This repository contains all exercises and small projects made during the course.
 
 <br><br>
@@ -14,8 +14,9 @@ This repository contains all exercises and small projects made during the course
 
 ## 🚧 &nbsp;Projects
 
-- [x] [Calculadora IMC]() - [Page]()
-- [x] [Data]() - [Page]()
-- [x] [Calculadora]() - [Page]()
-- [x] [Validador de CPF]() - [Page]()
-- [x] [Gerador de CPF]() - [Page]()
+- [x] [BMI Calculator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo3/029_calculo_imc) - [Page]()
+- [x] [Timer](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo3/048_timer) - [Page]()
+- [x] [Calculator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo4/060_calculadora_com_funcao_construtora) - [Page]()
+- [x] [CPF Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/096_gerador_de_cpfs_validos) - [Page]()
+- [x] [Password Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/097_gerador_de_senhas) - [Page]()
+- [x] [Form Validator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo7/087_validando_um_formulario.js) - [Page]()
