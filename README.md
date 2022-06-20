@@ -16,6 +16,7 @@ This repository contains all exercises and small projects made during the course
 
 - [x] [BMI Calculator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo3/029_calculo_imc) - [Page]()
 - [x] [Timer](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo3/048_timer) - [Page]()
+- [x] [To-do List](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo3/049_lista_de_tarefas) - [Page]()
 - [x] [Calculator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo4/060_calculadora_com_funcao_construtora) - [Page]()
 - [x] [CPF Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/096_gerador_de_cpfs_validos) - [Page]()
 - [x] [Password Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/097_gerador_de_senhas) - [Page]()
