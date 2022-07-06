@@ -21,3 +21,4 @@ This repository contains all exercises and small projects made during the course
 - [x] [CPF Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/096_gerador_de_cpfs_validos) - [Page]()
 - [x] [Password Generator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo9/097_gerador_de_senhas) - [Page]()
 - [x] [Form Validator](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo7/087_validando_um_formulario.js) - [Page]()
+- [x] [Agenda](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo11) - [Page]()

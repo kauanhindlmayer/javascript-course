@@ -6,7 +6,7 @@ const ContatoSchema = new mongoose.Schema({
   sobrenome: { type: String, required: false, default: '' },
   email: { type: String, required: false, default: '' },
   telefone: { type: String, required: false, default: '' },
-  criadoEm: { type: Date, default: Date.now }
+  criadoEm: { type: Date, default: Date.now },
 });
 
 const ContatoModel = mongoose.model('Contato', ContatoSchema);
@@ -19,7 +19,6 @@ function Contato(body) {
 
 Contato.prototype.register = async function() {
   this.valida();
-
   if(this.errors.length > 0) return;
   this.contato = await ContatoModel.create(this.body);
 };
@@ -48,7 +47,6 @@ Contato.prototype.cleanUp = function() {
     sobrenome: this.body.sobrenome,
     email: this.body.email,
     telefone: this.body.telefone,
-
   };
 };
 
