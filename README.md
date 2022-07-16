@@ -16,8 +16,8 @@ This repository contains all exercises and small projects made during the course
 
 ### Node.js
 - [x] [Agenda](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo11_projeto_agenda)
-- [x] [API REST](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo13_api_rest)
+- [x] [API REST](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo12_api_rest)
 
 
 ### React.js
-- [x] [To-do List](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo14_react/lista-de-tarefas)
+- [x] [To-do List](https://github.com/kauanhindlmayer/javascript-course/tree/main/modulo13_react/lista-de-tarefas)
