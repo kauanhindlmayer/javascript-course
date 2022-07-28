@@ -1,14 +1,14 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
 
 export default function Rotas() {
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="*" element={<Page404 />} />
-    </Routes>
+    <BrowserRouter>
+      <Route exact path="/" component={Login} />
+      <Route path="*" component={Page404} />
+    </BrowserRouter>
   );
 }
