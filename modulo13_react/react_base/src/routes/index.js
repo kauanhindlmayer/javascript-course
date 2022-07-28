@@ -1,16 +1,14 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Login from '../pages/Login';
 import Page404 from '../pages/Page404';
 
-export default function Routes() {
+export default function Rotas() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Login} />
-        <Route path="*" component={Page404} />
-      </Switch>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="*" element={<Page404 />} />
+    </Routes>
   );
 }
