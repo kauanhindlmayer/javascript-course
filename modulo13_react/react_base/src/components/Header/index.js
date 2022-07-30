@@ -6,7 +6,9 @@ import { useSelector } from 'react-redux';
 import { Nav } from './styled';
 
 export default function Header() {
-  const botaoClicado = useSelector((state) => console.log(state.botaoClicado));
+  const botaoClicado = useSelector((state) =>
+    console.log(state.example.botaoClicado)
+  );
 
   return (
     <Nav>
