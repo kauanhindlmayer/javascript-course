@@ -7,10 +7,9 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-
   a {
     color: #fff;
-    margin: 0 10px 0;
+    margin: 0 10px 0 0;
     font-weight: bold;
   }
 `;

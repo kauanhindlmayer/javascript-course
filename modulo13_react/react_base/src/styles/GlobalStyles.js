@@ -1,3 +1,4 @@
+
 import styled, { createGlobalStyle } from 'styled-components';
 import * as colors from '../config/colors';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,17 +10,14 @@ export default createGlobalStyle`
     outline: none;
     box-sizing: border-box;
   }
-
   body {
     font-family: sans-serif;
     background: ${colors.primaryDarkColor};
     color: ${colors.primaryDarkColor};
   }
-
   html, body, #root {
     height: 100%;
   }
-
   button {
     cursor: pointer;
     background: ${colors.primaryColor};
@@ -29,23 +27,19 @@ export default createGlobalStyle`
     border-radius: 4px;
     font-weight: 700;
   }
-
   a {
     text-decoration: none;
     color: ${colors.primaryColor};
   }
-
   ul {
     list-style: none;
   }
-
-  /* body .Toastify .Toastify__toast-container .Toastify__toast--success {
-    background: ${colors.successColor};
+  body .Toastify .Toastify__toast-container .Toastify__toast--success {
+    background: ${colors.successColor}
   }
-
   body .Toastify .Toastify__toast-container .Toastify__toast--error {
-    background: ${colors.errorColor};
-  } */
+    background: ${colors.errorColor}
+  }
 `;
 
 export const Container = styled.section`

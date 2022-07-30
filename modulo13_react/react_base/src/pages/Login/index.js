@@ -16,7 +16,10 @@ export default function Login() {
 
   return (
     <Container>
-      <Title>Login</Title>
+      <Title>
+        Login
+        <small>Oie</small>
+      </Title>
       <Paragrafo>Lorem ipsum dolor sit amet.</Paragrafo>
       <button type="button" onClick={handleClick}>
         Enviar

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 export default function MyRoute({ component: Component, isClosed, ...rest }) {
   const isLoggedIn = false;
+
   if (isClosed && !isLoggedIn) {
     return (
       <Redirect
